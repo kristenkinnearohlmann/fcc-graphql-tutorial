@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "graphpack",
+    "dev": "graphpack --unhandled-rejections=strict",
     "build": "graphpack build"
   },
   "keywords": [],

@@ -1,10 +1,12 @@
-type Query {
-    hello: String
-}
-
 type User {
     id: ID!
     name: String!
     email: String!
     age: Int
+}
+
+type Query {
+    hello: String
+    users: [User!]!
+    user(id: ID!): User!
 }
