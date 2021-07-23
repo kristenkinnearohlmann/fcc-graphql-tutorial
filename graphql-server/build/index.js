@@ -431,7 +431,15 @@ __webpack_require__.r(__webpack_exports__);
 
 const resolvers = {
   Query: {
-    hello: () => "Hello World!"
+    hello: () => "Hello World!",
+    user: (parent, {
+      id
+    }, context, info) => {
+      return _db__WEBPACK_IMPORTED_MODULE_0__["users"].find(user => user.id === id);
+    },
+    users: (parent, args, context, info) => {
+      return _db__WEBPACK_IMPORTED_MODULE_0__["users"];
+    }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (resolvers);
