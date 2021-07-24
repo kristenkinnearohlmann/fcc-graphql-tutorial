@@ -405,12 +405,12 @@ webpackContext.id = "./src sync recursive ^\\.\\/(schema|schema\\/index)\\.(gql|
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "users", function() { return users; });
 let users = [{
-  id: 1,
+  id: "1",
   name: "John Doe",
   email: "john@gmail.com",
   age: 22
 }, {
-  id: 2,
+  id: "2",
   name: "Jane Doe",
   email: "jane@gmail.com",
   age: 23
